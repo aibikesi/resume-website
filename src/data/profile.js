@@ -6,10 +6,10 @@
   heroGreeting: '你好， 我是 陈祥宇',
   heroTagline: '用代码创造\n数字体验',
   heroTaglineEn: 'Crafting Digital Experiences',
-  heroDescription: '计算机科学与技术专业在读，热爱前端开发与交互设计',
+  heroDescription: '计算机科学与技术专业在读，热爱前端开发与全栈技术实践',
   bio: [
-    '计算机科学与技术专业本科在读，专注于前端开发技术。熟练掌握 React、Vue 等主流框架，对 UI/UX 设计有独到见解。热爱将视觉创意转化为流畅的交互体验，追求代码质量与设计美学的平衡。',
-    '在校期间积极参与各类项目实践与设计工作坊，注重工程化思维与设计思维的双重培养。持续学习前沿技术，致力于成为兼具设计感与工程能力的开发者。'
+    '计算机科学与技术专业本科在读，专注于全栈开发技术。熟练掌握 HTML、CSS、JavaScript 及 Vue 等前端框架，具备 Spring Boot 后端开发能力。热爱将创意转化为实用的技术方案，追求代码质量与工程效率的平衡。',
+    '在校期间积极参与项目实践，注重前后端协同开发与数据库设计。持续学习人工智能与机器学习前沿技术，致力于成为兼具工程能力与创新思维的开发者。'
   ],
   
   avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=student&backgroundColor=FF2D55&radius=50',
@@ -36,21 +36,10 @@
       icon: 'code',
       enTitle: 'Frontend',
       items: [
-        { name: 'React / Next.js', level: 82 },
-        { name: 'Vue / Nuxt.js', level: 75 },
-        { name: 'TypeScript', level: 78 },
-        { name: 'CSS / Tailwind', level: 85 }
-      ]
-    },
-    {
-      category: 'UI/UX 设计',
-      icon: 'layers',
-      enTitle: 'Design',
-      items: [
-        { name: 'Figma / 原型设计', level: 88 },
-        { name: '交互动效', level: 80 },
-        { name: '设计系统', level: 72 },
-        { name: '用户研究', level: 68 }
+        { name: 'CSS', level: 85 },
+        { name: 'HTML', level: 88 },
+        { name: 'JavaScript', level: 80 },
+        { name: 'Vue', level: 75 }
       ]
     },
     {
@@ -58,21 +47,41 @@
       icon: 'server',
       enTitle: 'Backend',
       items: [
-        { name: 'Node.js / Express', level: 70 },
         { name: 'Python', level: 72 },
-        { name: '数据库基础', level: 65 },
-        { name: 'RESTful API', level: 68 }
+        { name: 'Spring Boot', level: 68 },
+        { name: 'Spring MVC', level: 65 }
       ]
     },
     {
-      category: '工具与工程化',
+      category: '开发工具',
       icon: 'tool',
-      enTitle: 'Tools',
+      enTitle: 'DevTools',
       items: [
-        { name: 'Git / 版本控制', level: 80 },
-        { name: 'Webpack / Vite', level: 75 },
-        { name: 'Docker 基础', level: 55 },
-        { name: 'CI/CD 流程', level: 60 }
+        { name: 'Git', level: 80 },
+        { name: 'Linux', level: 72 },
+        { name: 'IDEA', level: 78 }
+      ]
+    },
+    {
+      category: '数据库',
+      icon: 'database',
+      enTitle: 'Database',
+      items: [
+        { name: 'MySQL', level: 75 },
+        { name: 'Redis', level: 68 },
+        { name: 'SQL 优化', level: 65 },
+        { name: '数据库设计规范', level: 70 }
+      ]
+    },
+    {
+      category: '人工智能',
+      icon: 'cpu',
+      enTitle: 'AI / ML',
+      items: [
+        { name: 'Scikit-learn', level: 65 },
+        { name: 'PyTorch', level: 60 },
+        { name: '计算机视觉', level: 62 },
+        { name: 'NLP', level: 58 }
       ]
     }
   ],
@@ -80,15 +89,15 @@
   projects: [
     {
       title: '智慧校园助手',
-      description: '基于 React + Node.js 的全栈校园服务平台，集成课程表、活动通知等功能',
-      tech: ['React', 'Node.js', 'MongoDB'],
+      description: '基于 Spring Boot + Vue 的全栈校园服务平台，集成课程表、活动通知等功能',
+      tech: ['Spring Boot', 'MySQL', 'Vue'],
       period: '2025'
     },
     {
-      title: '影集·Photo Gallery',
-      description: '响应式摄影作品展示网站，支持瀑布流布局与交互动效',
-      tech: ['Next.js', 'Framer Motion', 'Tailwind CSS'],
-      period: '2024'
+      title: '个人简历网站',
+      description: '响应式个人简历展示网站，支持交互动效与暗色主题，部署于 Cloudflare',
+      tech: ['React', 'Vite', 'GSAP', 'WebGL'],
+      period: '2025'
     },
     {
       title: '车辆追踪系统',
@@ -103,7 +112,7 @@
     degree: '计算机科学与技术 · 本科',
     period: '2020 - 2027',
     gpa: '3.7/4.0',
-    courses: ['数据结构与算法', 'Web前端开发', '人机交互设计', '数据库系统原理', '计算机网络']
+    courses: ['数据结构与算法', 'Web前端开发', '操作系统', '数据库系统原理', '计算机网络']
   },
 
   navItems: [
