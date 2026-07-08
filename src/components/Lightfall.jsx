@@ -26,7 +26,7 @@ if(idx<=0)return uColor0;if(idx==1)return uColor1;if(idx==2)return uColor2;if(id
 if(idx==4)return uColor4;if(idx==5)return uColor5;if(idx==6)return uColor6;return uColor7;}
 vec3 tanhv(vec3 x){vec3 e=exp(-2.0*x);return(1.0-e)/(1.0+e);}
 vec2 sceneC(vec2 frag,vec2 r){vec2 P=(frag+frag-r)/r.x;float z=0.0;float d=1e3;vec4 O=vec4(0.0);
-for(int k=0;k<39;k++){if(d<=1e-4)break;O=z*normalize(vec4(P,uZoom,0.0))-vec4(0.0,4.0,1.0,0.0)/4.5;
+for(int k=0;k<22;k++){if(d<=1e-4)break;O=z*normalize(vec4(P,uZoom,0.0))-vec4(0.0,4.0,1.0,0.0)/4.5;
 d=1.0-sqrt(length(O*O));z+=d;}return vec2(O.x,atan(O.z,O.y));}
 void mainImage(out vec4 o,vec2 C){vec2 r=iResolution.xy;vec2 uv0=(C+C-r)/r.x;
 float T=0.1*iTime*uSpeed+9.0;float angRings=max(1.0,floor(6.28318530718*max(uDensity,0.05)+0.5));
@@ -60,7 +60,7 @@ const Lightfall = ({
 
   useEffect(()=>{
     const div=cRef.current;if(!div)return;
-    const renderer=new Renderer({dpr:dpr??(window.devicePixelRatio||1),alpha:true,antialias:true});
+    const renderer=new Renderer({dpr:dpr??(window.devicePixelRatio||1),alpha:true,antialias:false});
     reRef.current=renderer;const gl=renderer.gl;const canvas=gl.canvas;
     canvas.style.cssText='width:100%;height:100%;display:block;position:absolute;inset:0';
     div.appendChild(canvas);

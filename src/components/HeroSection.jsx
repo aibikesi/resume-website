@@ -40,17 +40,15 @@ export default function HeroSection() {
       '-=0.3'
     );
 
-    // Title lines with compression-settle effect
+    // Title lines — clean slide-up, no scale bounce
     const titleEls = titleRef.current?.querySelectorAll('.hero__title-line');
     if (titleEls) {
       titleEls.forEach((el, i) => {
         tl.fromTo(el,
-          { scaleX: 0.82, scaleY: 0.88, y: 28, opacity: 0, transformOrigin: 'left center' },
-          { scaleX: 1, scaleY: 1, y: 0, opacity: 1, duration: 1.2, ease: 'expo.out' },
-          i === 0 ? '-=0.3' : '-=0.5'
+          { y: 40, opacity: 0 },
+          { y: 0, opacity: 1, duration: 1, ease: 'power3.out' },
+          i === 0 ? '-=0.3' : '-=0.55'
         );
-        tl.to(el, { scaleX: 1.02, scaleY: 1.01, duration: 0.25, ease: 'power2.out' }, '-=0.6');
-        tl.to(el, { scaleX: 1, scaleY: 1, duration: 0.45, ease: 'sine.out' }, '-=0.15');
       });
     }
 

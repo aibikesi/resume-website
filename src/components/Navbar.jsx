@@ -62,9 +62,7 @@ export default function Navbar() {
     <nav className={'navbar' + (scrolled ? ' navbar--scrolled' : '')}>
       <div className="navbar__inner">
         <a href="#hero" className="navbar__logo" onClick={(e) => handleClick(e, '#hero')}>
-          <span className="navbar__logo-bracket">&lt;</span>
-          <span className="navbar__logo-text">{profile.nameEn.split(' ')[0].toLowerCase()}</span>
-          <span className="navbar__logo-bracket"> /&gt;</span>
+          <span className="navbar__logo-text">{profile.nameEn.split(' ')[0]}</span>
         </a>
         <div className="navbar__links">
           {profile.navItems.map((item) => (
